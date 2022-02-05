@@ -1,0 +1,481 @@
+
+
+*{
+margin: 0;
+padding: 0;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+/* Nav base */
+
+.topnav {
+  position: relative;
+  overflow: hidden;
+  background-color: #244676;
+
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+
+
+
+.topnav-centered a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 14px 16px;
+}
+
+.topnav-right {
+  float: right;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+/* Responsive navigation menu (for mobile devices) */
+
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav-right {
+    float: none;
+    display: block;
+  }
+  
+  .topnav-centered a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+}
+
+
+/*============================================ NAVBAR END ============================================================*/
+
+
+/*============================================ ARROW STEPING ITEM-SECTION 02 ==========================================*/
+
+.container ul {
+  list-style: none;
+  display: flex;
+  width: 95%;
+  margin: 2em;
+}
+
+/*styling arrow steping items */
+.container li {
+  flex: 1;
+  height: 50px;
+  margin-right: 31px;
+  display: inline-flex;
+  position: relative;
+  background: #d7d7d7;
+  -webkit-box-shadow: 0 11px 6px -6px #777; /*---Arrow box shadow ------*/
+  -moz-box-shadow: 0 11px 6px -6px #777;
+   box-shadow: 0 11px 6px -6px #777;
+   color: white;
+}
+
+/*using pseudo elements*/
+.container li::before {
+  background: #d7d7d7;
+
+}
+.container li::after {
+  border-left: 30px solid #d7d7d7;
+}
+
+.container li.current {
+  background: #72bcd9;
+  color: #4d78da;
+}
+.container li.current::before {
+  background: #72bcd9;
+}
+.container li.current::after {
+  border-left: 30px solid #72bcd9;
+}
+.container li.completed {
+  background: #d7d7d7;
+  color: white;
+}
+.container li.completed::before {
+  background: #d7d7d7;
+}
+.container li.completed::after {
+  border-left: 30px solid #d7d7d7;
+}
+
+.container li.Milestone3 {
+  background: #d7d7d7;
+  color: white;
+
+}
+.container li.Milestone3::before {
+  background: #d7d7d7;
+}
+.container li.Milestone3::after {
+  border-left: 30px solid #d7d7d7;
+}
+
+.container li::before {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-left: 30px solid white;
+  border-bottom: 25px solid transparent;
+
+}
+.container li::after {
+  content: "";
+  display: inline-block;
+  background: transparent;
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  right: -30px;
+  position: absolute;
+  z-index: 1;
+}
+
+.container .content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 5px 0px 5px 6px;
+}
+
+.container li:last-child {
+  margin-right: 0px;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+       -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+}
+
+
+/* Arrow steping items - Media query => RWD */
+@media (max-width: 1366px) {
+  .container li:first-child {
+    max-width: 70px;
+  }
+}
+
+
+/*=========================================== SECTION 03- BOX EFFECT ============================================*/
+
+
+.box {
+    width: 53%;
+    height: 60px;
+    background:#FFF;
+    margin:2px auto;
+     border: solid;
+    margin-top: 60px;
+    box-shadow: 6px 6px 2px -1px #6d95ef;
+}
+
+.box h3{
+  text-align:center;
+    position:relative;
+    top:10px;
+
+
+}
+
+/* box - Media query */
+@media (max-width:530px) {
+  
+  .box{
+    max-width: 100%;
+    margin-left: 9em;
+     margin-top: none;
+  }
+}
+
+/*======================================================Section4==============================================*/
+
+.container-main{
+    margin: 2em ;
+    background-color: black;
+}
+
+.float {
+  float: left;
+  width: 200px;
+  height: 200px;
+  background-color: rebeccapurple;
+  margin: 20px;
+}
+
+.following {
+  background-color: #ccc;
+}
+
+
+
+
+/* styling attched video */
+.post{
+    
+    width: 100%;
+    /*float: right;*/
+       /* margin: auto; */
+    /* max-width: 500px; */
+    width: 101%;
+    /* float: right; */
+    margin-right: 29em;
+
+}
+.video{
+position: relative;
+width: 100%;
+padding-bottom: 56.25%;
+height: 0;
+margin: -8%;
+left: 63%;
+}
+   
+  
+video{
+position: absolute;
+top:0;
+left: 0;
+width: 100%;
+height: 100%;
+
+
+
+}
+
+
+/*conatiner*/
+
+.bar {
+  background-color:white;
+  color: rgba(186, 180, 224, 0.75);
+  font-size: 19px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-content: stretch;
+  margin-left: 9%;
+  margin-top: 3em;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.bar-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  align-content: stretch;
+  flex: 0 1 100%;
+  height: auto;
+  max-width: 1300px;
+}
+
+.column.brunsonbox h3.styled {
+  border-bottom: solid #ff5192 2px;
+  font-size: 1.5vw;
+  color: blue;
+  padding: 1em;
+}
+
+.para_last {
+  background: #FBFBFB;
+  background-image: radial-gradient(#bed6ff 1px, transparent 1px);
+  background-position: 100% 100%;
+  background-size: 15px 15px;
+  color: #554d4d
+}
+
+.entity {
+  border:0;
+  box-shadow: 0px 4px 30px rgba(10, 21, 86, 0.05);
+}
+
+.small{
+    margin-top: 8.5%;
+    margin-left: 38%;
+    font-family: sans-serif;
+}
+.rateStart{
+    /*background-color: yellow;*/
+    color: yellow;
+}
+
+
+
+ @media screen and (min-width: 601px) {
+  .small p{
+    font-size: 10px;
+  }
+}
+
+
+
+/*chat box section 5*/
+
+.left-side-wrapper {
+  margin: 25px auto;
+      padding: 0em 3em;
+    /* position: relative; */
+    /* display: grid; */
+    /* width: 100%; */
+    /* padding: 12em; */
+    width: 68em;
+}
+
+.tab {
+  padding: 0.7em;
+  width: 10.5em;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+}
+
+.add-panel {
+  color: #6C84DC;
+  float: right;
+  margin-top: 15px;
+  border: none;
+  background: none;
+}
+
+
+.conversation-wrapper {
+  height: 518px;
+  overflow: auto;
+  background-color: #FFFFFF;
+  padding: 25px 20px 0px 20px;
+}
+
+
+
+.message-left, .message-right {
+  margin-bottom: 1em;
+  position: relative;
+}
+
+
+.left-bubble-wrapper:before {
+  content:"";
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  margin: 1.25em 0 0 -0.5em;
+  transform: rotate(-45deg);
+  border-radius: 2px; 
+}
+
+
+
+.left-bubble-wrapper.user-blue:before {
+  background-color: #E9EEFB;
+}
+
+.left-bubble-wrapper.user-pink:before {
+  background-color: #F8EEFB;
+}
+
+.left-bubble {
+  font-family: 'Roboto';
+  font-weight: 400;
+  color: #3F3F3F;
+  width: 100%;
+  line-height: 1.5em;
+  padding: 1.25em 1em;
+  background-color: #F7F7F7;
+  border: none;
+  border-radius: 3px;
+  position: relative;
+}
+
+.right-bubble {
+  font-family: 'Roboto';
+  font-weight: 400;
+  color: #3F3F3F;
+  width: 100%;
+  line-height: 1.5em;
+  padding: 1.25em 1em;
+  background-color: #FFFFFF;
+  border: solid 1px #D7DDE4;
+  border-radius: 3px;
+  text-align: right;
+  position: relative;
+}
+
+.left-bubble .time-stamp {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  font-size: 0.75em;
+  color: #8D8D8D;
+}
+
+.right-bubble .time-stamp {
+  position: absolute;
+  top: 10px;
+  left: 16px;
+  font-size: 0.75em;
+  color: #8D8D8D;
+}
+
+.user-blue {
+  background-color: #E9EEFB;
+  border-radius: 3px
+}
+
+.user-pink {
+  background-color: #F8EEFB;
+  border-radius: 3px;
+}
+
+.left-bubble h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.right-bubble h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.user-blue h1 {
+  color: #6C84DC;
+}
+
+.user-pink h1 {
+  color: #DD77CB;
+}
+
+.left-bubble p {
+  padding: 0;
+  margin: 0;
+}
+
+
